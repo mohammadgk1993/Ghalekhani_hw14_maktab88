@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+  background-color: rgb(54, 204, 54);
+  color: white;
+  border:none;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+input {
+  border:none;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#commands {
+  width: 30%;
+}
+
+#read {
+  display: none;
+  flex-direction: column;
+  margin: 1%;
+  border:#050505 3px solid;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#read * {
+  margin: 1%;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin:1%
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #8d8d8d;}
+  
+  table tr:hover {background-color: #b16363;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #050505;
+    color: white;
+  }
+
+  table td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: white;
+  }
+
+#delete {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  border:#050505 3px solid;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#delete * {
+  margin: 1%;
+}
+
+
+
+/* SIGN UP PAGE CSS START FROM HERE */
+
+#sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-form {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(60, 233, 17);
+  padding: 3%;
+}
+
+#signup-form * {
+  margin: 2%;
+  padding: 2%;
+  font-size: larger;
+}
+
+#signup-form button {
+  background-color: green;
+}
+
+
+
+/* LOGIN UP PAGE CSS START FROM HERE */
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(60, 233, 17);
+  padding: 3%;
+}
+
+#login-form * {
+  margin: 2%;
+  padding: 2%;
+  font-size: larger;
+}
+
+#login-form button {
+  background-color: green;
+}
