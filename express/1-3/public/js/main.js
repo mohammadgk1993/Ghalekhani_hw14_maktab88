@@ -53,7 +53,7 @@
         });
     }
 
-    function deleteProduct(deleteId) {
+    function deleteUser(deleteId) {
         deleteId = $('#deleteId').val()
     
         $.ajax({

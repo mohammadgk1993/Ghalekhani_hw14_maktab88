@@ -5,7 +5,7 @@ const path = require("path");
 const users = require("../db/users-data.json");
 
 
-// create new product
+// create new user
 router.post("/new-user", (req, res) => {
     const newUser = {
         firstname: req.body.firstname,
@@ -28,7 +28,7 @@ router.post("/new-user", (req, res) => {
 });
 
 
-// read products
+// read users
 router.get("/get-all-users", (req, res) => {
 
     console.log(users);
@@ -38,7 +38,7 @@ router.get("/get-all-users", (req, res) => {
 
 
 
-//read single product
+//read single user
 router.get("/get-user/:username", (req, res) => {
 
     console.log(req.params.username);
@@ -55,7 +55,7 @@ router.get("/get-user/:username", (req, res) => {
 });
 
 
-// remove product
+// remove user
 router.delete("/remove-user/:username", (req, res) => {
 
     const userTemp = users.filter(x => x.username != req.params.username);
@@ -72,7 +72,7 @@ router.delete("/remove-user/:username", (req, res) => {
 });
 
 
-// update product
+// update user
 // router.put("/editUser/:username", (req, res) => {
 
 //     const user = users.find(x => x.username == req.params.username);

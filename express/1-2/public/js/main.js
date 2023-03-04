@@ -102,7 +102,7 @@
 
             $.ajax({
                 type: "put",
-                url: `/product/editProduct/updateId`,
+                url: `/product/editProduct/${newProduct.id}`,
                 data: newProduct,
                 success:function(data) {
                     JSON.parse(data).filter(item => item.id == item.updateId)
